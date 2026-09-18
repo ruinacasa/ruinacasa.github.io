@@ -1,343 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="#BC8887" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Claudia & Rui</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#BC8887" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cláudia & Rui</title>
+  <meta property="og:title" content="Cláudia & Rui - 4 Setembro 2027">
+  <meta property="og:description" content="Casamento da Cláudia e do Rui - 4 Setembro 2027">
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:image" content="unsplash.jpg">
+  <meta property="og:url" content="http://casamento.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/bulma.min.css" />
+  <link rel="stylesheet" href="css/bulma-tooltip.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/casamento.css" />
+  <script
+  src="https://kit.fontawesome.com/2828f7885a.js"
+  integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="js/jquery.coundown.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div class="preloader-wrapper">
+    <div class="preloader">
+      <img src="image/divider-flowers-leaves.png" alt="Flower" />
+    </div>
+  </div>
+  <div class="header-wrapper" id="home">
+    <section class="hero is-large">
+      <nav class="navbar is-transparent is-hidden-desktop">
+        <div class="navbar-brand is-fixed-top">
+          <div class="navbar-burger burger" data-target="mobile-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="mobile-nav" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-item" href="#Waktu">
+                Data
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#lokasi">
+                Localização
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#playlistsi">
+                Playlist
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#tentang-pasangan">
+                Sobre os Noivos
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h2 class="title">Cláudia & Rui</h2>
+          <h4 class="subtitle tempatwaktu">
+          </br>
+          Sábado, 4 Setembro 2027
+        </br>
+        Quinta do Escondidinho
+      </br>
+      Braga
+    </br>
+  </h4>
+</div>
+<div>
+  <ul id="countdowncasamento" >
+    <li><span class="days">999</span><p class="days_text">Dias</p></li>
+    <li class="separator">:</li>
+    <li><span class="hours">99</span><p class="hours_text">Horas</p></li>
+    <li class="separator">:</li>
+    <li><span class="minutes">99</span><p class="minutes_text">Minutos</p></li>
+    <li class="separator">:</li>
+    <li><span class="seconds">99</span><p class="seconds_text">Segundos</p></li>
+  </ul>
+  <div class="spasi">
+  </div>
+  <script type="text/javascript">
+    var now = new Date();
+    var day = now.getDate();
+    var month = now.getMonth() + 1;
+    var year = now.getFullYear() + 1;
+    
+    var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+    var diad = '09/04/2027 15:00:00';
 
-    <meta property="og:title" content="Claudia & Rui - 4 Setembro 2027">
-    <meta property="og:description" content="Casamento da Claudia e do Rui - 4 Setembro 2027">
-    <meta property="og:locale" content="pt_PT" />
-    <meta property="og:image" content="unsplash.jpg">
-    <meta property="og:url" content="http://casamento.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="css/bulma.min.css" />
-    <link rel="stylesheet" href="css/bulma-tooltip.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/casamento.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="js/jquery.coundown.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script> -->
-    <!-- Begin Script for Countdown -->
- <!--    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-23064379-20');
-    </script> -->
-    <!-- Begin Script for Countdown -->
-
-    <!-- Github Button -->
-    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
-  </head>
-  <body>
-    <!-- Begin Preloader -->
-    <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="image/divider-flowers-leaves.png" alt="Flower" />
+    $('#countdowncasamento').countdown({
+      date: diad,
+      offset: 0,
+      day: 'Dia',
+      days: 'Dias'
+    }, function () {
+    });
+  </script>  
+</div>
+</div>
+<div class="hero-foot ">
+  <div class="hero-foot--wrapper">
+    <div class="columns">
+      <div class="column is-12 hero-menu-desktop has-text-centered">
+        <ul>
+          <li class="is-active">
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#Waktu">Data</a>
+          </li>
+          <li>
+            <a href="#lokasi">Localização</a>
+          </li>
+          <li>
+            <a href="#playlistsi">Playlist</a>
+          </li>
+          <li>
+            <a href="#tentang-pasangan">Sobre os Noivos</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- End Preloader-->
-    <!-- Begin Header -->
-    <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-large">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand is-fixed-top">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#Waktu">
-                  Data
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#lokasi">
-                  Localização
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#playlistsi">
-                  Playlist
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-pasangan">
-                  Sobre os Noivos
-                </a>
-              </div>
-<!--               <div class="navbar-item">
-                <a class="navbar-item" href="#rsvp">
-                  RSVP
-                </a>
-              </div> -->
-            </div>
-          </div>
-        </nav>
-        <!-- End Mobile Nav -->
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <!-- <h1 class="subtitle">Casamento</h1> -->
-            <h2 class="title">Claudia & Rui</h2>
-            <h4 class="subtitle tempatwaktu">
-                </br>
-                Sábado, 4 Setembro 2027
-                </br>
-                Quinta do Escondidinho
-                </br>
-                Braga
-                </br>
-            </h4>
-          </div>
-          <!-- Start Countdown -->       
-          <div>
-            <ul id="countdowncasamento" >
-              <li><span class="days">999</span><p class="days_text">Dias</p></li>
-              <li class="separator">:</li>
-              <li><span class="hours">99</span><p class="hours_text">Horas</p></li>
-              <li class="separator">:</li>
-              <li><span class="minutes">99</span><p class="minutes_text">Minutos</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">99</span><p class="seconds_text">Segundos</p></li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-              var now = new Date();
-              var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-          
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '09/04/2027 15:00:00';
+  </div>
+</div>
+</section>
+</div>
+<div class="main-content">
+ <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+  <div class="nama-lengkap" >
+    O Casamento
+  </div>
+  <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+    <br />
+    <br />
+    Estamos prontos para assinar o nosso contrato vitalício e ficamos felizes por partilhares este momento connosco.
+    <br />
+    Guarda a data, contamos contigo!
+  </p>
 
-              $('#countdowncasamento').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: 0, // TODO Your Timezone Offset
-                day: 'Dia',
-                days: 'Dias'
-              }, function () {
-                // alert('Done!');
-              });
-            </script>  
-          </div>
-          <!-- End Countdown -->
-        </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#Waktu">Data</a>
-                  </li>
-                  <li>
-                    <a href="#lokasi">Localização</a>
-                  </li>
-                  <li>
-                    <a href="#playlistsi">Playlist</a>
-                  </li>
-                  <li>
-                    <a href="#tentang-pasangan">Sobre os Noivos</a>
-                  </li>
-<!-- 
-                  <li>
-                    <a href="#rsvp">RSVP</a>
-                  </li> -->
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Hero Menu -->
-      </section>
-      <!-- End Hero -->
+  <span class="space40px"></span>
+  <span class="space40px"></span>
+
+  <div data-aos="fade-up" data-aos-easing="linear">
+    <div class="nama-lengkap" >
+      Ana Cláudia Rodrigues Ferreira
     </div>
-    <!-- End Header -->
+    <div class="ampersand">&</div>
+    <div class="nama-lengkap">
+      Rui Pedro Freitas Carvalho
+    </div>
+    
+  </div>
+  <span class="space40px"></span>
+  <div data-aos="fade-up" data-aos-easing="linear">
+    <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+  </div>
+  <span class="space40px"></span>
+  <span class="space40px"></span>
+</section>
+<section class="section-dark" id="Waktu">
+  <div class="container">
 
-    <!-- Begin Main Content -->
-    <div class="main-content">
-    <!-- Begin regular-section-->
-     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
-          <div class="nama-lengkap" >
-            O Casamento
-          </div>
-        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-        	<br />
-        	<br />
-			Estamos prontos para assinar o nosso contrato vitalício e ficamos felizes por partilhares este momento connosco.
-          <br />
-			Guarda a data, contamos contigo!
-        </p>
-
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="nama-lengkap" >
-            Ana Cláudia Rodrigues Ferreira
-          </div>
-          <div class="ampersand">&</div>
-          <div class="nama-lengkap">
-          Rui Pedro Freitas Carvalho
-          </div>
-           
-        </div>
-        <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-      </section>
-      <!-- End regular-section-->    
+    <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+      <h1 class="title has-text-centered section-title">Data</h1>
+    </div>
+    <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+      <div
+      class="column is-4 has-vertically-aligned-content">
       
-      <!-- Begin Waktu Section -->
-      <section class="section-dark" id="Waktu">
-        <div class="container">
+    </div>
+    <div class="column is-4 has-vertically-aligned-content">
+      
+      <p class="is-larger has-text-centered">
+        <div class="waktu tanggal-hari has-text-centered">Sábado</div> 
+        <div class="waktu tanggal-angka has-text-centered">4</div>
+        <div class="waktu tanggal-bulan has-text-centered">Setembro 2027</div>
+      </p>
+      
+    </div>
 
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Data</h1>
-          </div>
-          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-            <div
-              class="column is-4 has-vertically-aligned-content">
-            
-<!--               <p class="waktu is-larger has-text-centered">
-                Cerimonia
-                <br>
-                <strong>15h00</strong>
-              </p>
-             -->
-            </div>
-            <div class="column is-4 has-vertically-aligned-content">
-            
-              <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Sábado</div> 
-                  <div class="waktu tanggal-angka has-text-centered">4</div>
-                  <div class="waktu tanggal-bulan has-text-centered">Setembro 2027</div>
-              </p>
-            
-            </div>
+    <div class="column is-4 has-vertically-aligned-content">
+      
+    </div>
 
-            <div class="column is-4 has-vertically-aligned-content">
-              
-<!--               <h1 class="waktu is-larger has-text-centered">
-                Festa
-                <br>
-                <strong>16h00 ate acabar</strong>
-              </h1>
-               -->
-              
-            </div>
+  </div>
+</div>
+<div class="space40px"></div>
+<div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+ 
+</div>
+</section>
+<section class="section-darker" id="lokasi" >
+  <div class="container">
+    <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+      <h1 class="title has-text-centered section-title">Localização</h1>
+      <p class="tempat is-larger has-text-centered">
+        <strong>Quinta do Escondidinho</strong>
+        <br>
+        Avenida Imaculada Conceição 61,
+        <br>
+        Adaúfe, Braga
+        <br>
+      </p>
+    </div>
+    <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.4572534671643!2d-8.410192423930566!3d41.58098977127593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fe653509750b%3A0x33db55a19d373b4c!2sQuinta%20do%20Escondidinho!5e0!3m2!1sen!2spt!4v1785524022356!5m2!1sen!2spt"  width="100%"  height="450"  frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div class="space40px"></div>
+    <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+    </div>
+  </div>
+</section>
+<section class="section-dark" id="playlistsi" >
+  <div class="container">
+    <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+      <h1 class="title has-text-centered section-title">Playlist</h1>
+    </div>
+    <p class="tempat is-larger has-text-centered">
+      Ajuda-nos a escolher os sons.
+      <br>
 
-          </div>
-        </div>
-        <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-      <!--     <a href="https://calendar.google.com/event?action=TEMPLATE..." target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
-            <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;Adicionar ao Calendario (TODO)
-          </a> -->
-        </div>
-      </section>
-      <!-- End Waktu Content -->
-
-      <!-- Begin Lokasi Section -->
-      <section class="section-darker" id="lokasi" >
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Localização</h1>
-            <p class="tempat is-larger has-text-centered">
-              <strong>Quinta do Escondidinho</strong>
-              <br>
-              Avenida Imaculada Conceição 61,
-              <br>
-              Adaúfe, Braga
-              <br>
-            </p>
-          </div>
-          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-          	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.4572534671643!2d-8.410192423930566!3d41.58098977127593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fe653509750b%3A0x33db55a19d373b4c!2sQuinta%20do%20Escondidinho!5e0!3m2!1sen!2spt!4v1785524022356!5m2!1sen!2spt"  width="100%"  height="450"  frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1280267408406!2d106.9691569150978!3d-6.246854895478259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d5988a190d9%3A0x22b6a052b0a6a5f3!2sRM.%20Pondok%20Kenanga!5e0!3m2!1sen!2sid!4v1579433583123!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
-          </div>
-          <div class="space40px"></div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-<!--             <a href="https://maps.app.goo.gl/Qr3chjDpKrJWAdpY6" class="button btn-cta" target="_blank" data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-              &nbsp;&nbsp;Google Maps
-            </a> -->
-          </div>
-        </div>
-      </section>
-      <!-- End Lokasi Content -->
-
-      <section class="section-dark" id="playlistsi" >
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Playlist</h1>
-          </div>
-            <p class="tempat is-larger has-text-centered">
-            Ajuda-nos a escolher os sons.
-              <br>
-
-                <a href="https://open.spotify.com/playlist/1i6ieEX2UjxuPppeUuEplR?si=OAff-T-JT4WHILFuhYwtOA&utm_source=whatsapp&pt=ada6086c3fc4f50e122cff2c27bf2b4c&pi=xDw3ie21Rf-E6" class="button btn-cta" target="_blank" data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-              Adicionar Música
-            </a>
-            </p>
+      <a href="https://open.spotify.com/playlist/1i6ieEX2UjxuPppeUuEplR?si=OAff-T-JT4WHILFuhYwtOA&utm_source=whatsapp&pt=ada6086c3fc4f50e122cff2c27bf2b4c&pi=xDw3ie21Rf-E6" class="button btn-cta" target="_blank" data-aos="zoom-in">
+        <i class="far fa-directions"></i>
+        Adicionar Música
+      </a>
+    </p>
 
 
-          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1i6ieEX2UjxuPppeUuEplR?utm_source=generator&theme=0&si=2cc66d68f6bf4162" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>
-          <div class="space40px"></div>
+    <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1i6ieEX2UjxuPppeUuEplR?utm_source=generator&theme=0&si=2cc66d68f6bf4162" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="space40px"></div>
 
-        </div>
-      </section>
+  </div>
+</section>
+<section class="section-light regular-section is-fullheight" id="tentang-pasangan">
+  <div class="container">
+    <div class="columns is-multiline">  
+      <div class="column has-text-centered is-12 prolog">
+        <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> Sobre os Noivos</h1>
+        
 
-      <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
-      <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
-        <div class="container">
-          <div class="columns is-multiline">  
-          <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> Sobre os Noivos</h1>
-            
-
-          
-          <!-- IMAGES -->  
         <div class=" tile">
           <div class="tile is-ancestor">
            <div class="tile is-parent">
             <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
               <div class="content">
                 <p class="title-foto">
-                  2020 - Horten
+                  2019 - Horten
                 </p>
                 <p class="subtitle-foto">
                 </p>   
@@ -347,9 +267,8 @@
           <div class="tile is-parent">
             <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
               <div class="content">
-                <p class="title-foto">2019 - Oslo</p>
+                <p class="title-foto">2020 - Oslo</p>
                 <p class="subtitle-foto">
-                 <!-- Quando nos conhecemos <a href="https://google.com" target="_blank">Horten, Noruega</a> -->
                 </p>
               </div>
             </article>
@@ -395,95 +314,31 @@
           </article>
         </div>
       </div>   
-          <!-- IMAGES -->
-          <div class="space40px"></div>
-            <div data-aos="fade-up" data-aos-easing="linear">
-              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div> 
-            <div class="space40px"></div>
-            <div class="space40px"></div>
+      <div class="space40px"></div>
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
+      </div> 
+      <div class="space40px"></div>
+      <div class="space40px"></div>
 
-          </div>
-        </div>
-      </section>
-      <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
-
-      <!-- Begin RSVP Content -->
- <!--      <section class="section-dark contact" id="rsvp">
-        <div class="container">
-          <div class="columns is-multiline">          
-            <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Confirmacao de Convite</h1>
-            </div>
-            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-
-                Mais tarde recebes o convite e confirmas
-
-                </p>
-     
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20CPW,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Kabari CPW
-              </a>
-              
-
-          
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20CPP,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp; Kabari CPP
-              </a >
-              <div class="space40px"></div>
-
-              <div class="space40px"></div>
-              <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-              </div>
-              <div class="space40px"></div>
-              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                Contactos:
-                <br>
-                <a class="instagram":" href="_" target="_blank" alt="Claudia">
-                  <i class="fab fa-instagram"></i> @99999999999
-                </a>
-                &nbsp
-                <a class="instagram" href="_" target="_blank" alt="Rui">
-                  <i class="fab fa-instagram"></i> @999999999999
-                </a>
-              </p>
-
-            </div>
- 
-         </div>
-        </div>
-      </section> -->
-      <!-- End RSVP Content -->
     </div>
-    <!-- End Main Content -->
+  </div>
+</section>
 
-    <!-- Begin Footer -->
-    <div class="footer">
-      <div class="container">
-        <a href="https://github.com/daengdoang/simple-wedding-invitation" class="has-vertically-align">
-          <p class="has-vertically-align">2019-2027 &copy RUINA </p>
-        </a>
-      </div>
-    </div>
-    <!-- End Footer -->
-
-    <!-- Scripts -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="js/casamento.js"></script>
-
-
-    <!-- SCRIPT FOR FADING ???KEEP???? -->
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: "ease-out",
-        duration: 800,
-      });
-    </script>
-  </body>
+</div>
+<div class="footer">
+  <div class="container">
+    <p class="has-vertically-align">2019-2027 &copy RUINA </p>
+  </div>
+</div>
+<script src="js/casamento.js"></script>
+<link href="css/aos.css" rel="stylesheet">
+<script src="js/aos.js"></script>
+<script>
+  AOS.init({
+    easing: "ease-out",
+    duration: 800,
+  });
+</script>
+</body>
 </html>
